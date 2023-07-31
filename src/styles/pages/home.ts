@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { styled } from "..";
 
 export const HomeContainer = styled('main', {
@@ -8,14 +9,13 @@ export const HomeContainer = styled('main', {
   minHeight: 656
 })
 
-
-
-export const Product = styled('div', {
+export const Product = styled(Link, {
   background: 'linear-gradient(120deg, #4eabf8 0%, #ff5f42 100%)',
   borderRadius: 8,
   cursor: 'pointer',
   position: 'relative',
   overflow: 'hidden',
+  minWidth: 500,
 
   display: 'flex',
   alignItems: 'center',
@@ -23,8 +23,7 @@ export const Product = styled('div', {
 
   img: {
     objectFit: 'cover',
-    width: 'auto',
-    height: 'auto'
+    width: 'auto'
   },
 
   footer: {
