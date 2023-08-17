@@ -22,6 +22,11 @@ interface HomeProps {
 
 export default function Home({ products }: HomeProps) {
   const [sliderRef] = useKeenSlider({
+    breakpoints: {
+      '(max-width: 600px)': {
+        disabled: true
+      },
+    },
     slides: {
       perView: 3,
       spacing: 48

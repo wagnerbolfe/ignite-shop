@@ -6,7 +6,12 @@ export const HomeContainer = styled('main', {
   width: '100%',
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
-  minHeight: 656
+  minHeight: 656,
+  flexDirection: 'column',
+
+  '@media (min-width: 600px)': {
+    flexDirection: 'row'
+  },
 })
 
 export const Product = styled(Link, {
@@ -62,5 +67,10 @@ export const Product = styled(Link, {
       transform: 'translateY(0%)',
       opacity: 1
     }
-  }
+  },
+
+  '@media (max-width: 600px)': {
+    minWidth: '270px',
+    margin: '1rem'
+  },
 })

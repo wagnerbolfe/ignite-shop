@@ -14,6 +14,12 @@ export const Header = styled('header', {
   maxWidth: 1180,
   margin: '0 auto',
 
+  '@media (max-width: 600px)': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
   // display: 'flex',
   // alignItems: 'center',
   // justifyContent: 'center',
